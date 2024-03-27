@@ -1,3 +1,4 @@
+/* Set margin and background image for the entire page */
 body,
 html {
     margin: 0;
@@ -5,37 +6,45 @@ html {
     object-fit: fill;
 }
 
+/* Styling for the header */
 header {
     display: flex;
     justify-content: space-evenly;
     position: sticky;
+    /* Header sticks to the top when scrolling */
     top: 0;
     background-color: #202020;
     z-index: 1;
+    /* Ensure header stays on top of other elements */
 }
 
+/* Media query for screens with minimum width of 481px */
 @media screen and (min-width: 481px) {
 
+    /* Styling changes for header at larger screen sizes */
     header {
         display: flex;
         justify-content: space-around;
         border-bottom: solid #FFFFFF 3px;
+        /* Add bottom border */
     }
 
+    /* Hide dropdown menu initially */
     .dropdown {
         display: none;
     }
 
+    /* Styling for navigation container */
     .nav-container {
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
         align-items: baseline;
         padding-top: 10%;
-
-
+        /* Add space at the top */
     }
 
+    /* Styling for navigation items */
     .nav-items {
         font-size: 100%;
         font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -46,10 +55,12 @@ header {
         margin: 0.5em;
     }
 
+    /* Change color on hover for navigation items */
     .nav-items:hover {
         color: #947858;
     }
 
+    /* Styling for image container */
     .img_cont {
         display: flex;
         justify-content: center;
@@ -60,30 +71,44 @@ header {
         border-radius: 20px;
     }
 
+    /* Styling for logo image */
     .img_logo {
         width: 50%;
     }
 
+    /* Styling for background image container */
     .bg_img {
         padding: 10%;
     }
+
+    /* Change Size of the Subtitle */
+    .subtitle {
+        font-size: 3em;
+
+    }
 }
 
+/* Media query for screens with maximum width of 480px */
 @media screen and (max-width: 480px) {
 
+    /* Change Size of the Subtitle */
+    .subtitle {
+        font-size: 2em;
+
+    }
+
+    /* Styling changes for header at smaller screen sizes */
     header {
         display: flex;
         justify-content: flex-start;
     }
 
+    /* Hide navigation container initially */
     .nav-container {
         display: none;
     }
 
-    .nav-container {
-        display: none;
-    }
-
+    /* Styling for dropdown button */
     .dropbtn {
         background-color: #474747;
         color: white;
@@ -93,12 +118,13 @@ header {
         cursor: pointer;
     }
 
-
+    /* Styling for dropdown menu */
     .dropdown {
         position: relative;
         display: inline-block;
     }
 
+    /* Styling for dropdown content */
     .dropdown-content {
         display: none;
         position: absolute;
@@ -108,6 +134,7 @@ header {
         z-index: 1;
     }
 
+    /* Styling for dropdown links */
     .dropdown-content a {
         color: black;
         padding: 12px 16px;
@@ -119,26 +146,30 @@ header {
         display: block;
     }
 
+    /* Change color on hover for dropdown links */
     .dropdown-content a:hover {
         background-color: #947858;
         color: whitesmoke;
     }
 
+    /* Display dropdown content when hovering over dropdown */
     .dropdown:hover .dropdown-content {
         display: block;
     }
 
+    /* Change background color of dropdown button on hover */
     .dropdown:hover .dropbtn {
         background-color: #272727;
     }
 
-
-
+    /* Styling for logo image at smaller screen sizes */
     .img_logo {
         width: 100%;
         transform: scale(1.5);
+        /* Increase size of logo */
     }
 
+    /* Styling for image container at smaller screen sizes */
     .img_cont {
         display: flex;
         justify-content: center;
@@ -147,15 +178,13 @@ header {
         max-width: 1200px;
     }
 
+    /* Hide title container at smaller screen sizes */
     .title_cont {
         display: none;
     }
-
-
-
-
 }
 
+/* Styling for main content container */
 .main_cont {
     display: flex;
     justify-content: center;
@@ -163,21 +192,22 @@ header {
     max-height: 100%;
 }
 
+/* Styling for background image */
 .bg_img {
     width: 100%;
     display: flex;
     justify-content: center;
-
     background-repeat: no-repeat;
     background-image: url('https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=1622&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: 100%;
 }
 
-
+/* Styling for logo image */
 .img_logo {
     width: 50%;
 }
 
+/* Styling for material symbols outlined */
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -187,122 +217,191 @@ header {
     color: #ffffff;
 }
 
-
-
+/* Styling for home content section */
 .home-cont {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 15%;
+    /* Add margin around the content */
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 3em;
+    /* Add padding inside the container */
     border-radius: 50px;
-    box-shadow: 0px 2em 2em 2px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0px 2em 2em 2px rgba(0, 0, 0, 0.2);
+    /* Add shadow effect */
 }
 
+/* Styling for subtitle */
 .subtitle {
     color: #B0C32C;
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3em;
+    
     text-transform: uppercase;
     align-self: center;
 }
 
-
+/* Styling for card box */
 .card_box {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2rem;
+    /* Add gap between cards */
     margin-top: 3em;
+    /* Add top margin */
 }
 
+/* Styling for card images */
 .card-img {
     aspect-ratio: 1/1;
+    /* Set aspect ratio to maintain square shape */
     width: 100%;
+    /* Ensure the image takes up the full width of its container */
     object-fit: cover;
+    /* Scale the image to cover its entire container */
     border-radius: 15px;
+    /* Apply rounded corners to the image */
 }
 
+/* Styling for cards */
 .card {
     background-color: rgb(219, 199, 160);
+    /* Set background color */
     width: 100%;
+    /* Ensure the card takes up the full width of its container */
     max-width: 400px;
+    /* Set maximum width of the card */
     padding: 0.5em;
+    /* Add padding inside the card */
     border-radius: 20px;
+    /* Apply rounded corners to the card */
     font-weight: 400;
+    /* Set font weight */
     font-family: "Roboto Condensed", sans-serif;
+    /* Set font family */
     text-transform: uppercase;
+    /* Convert text to uppercase */
     box-shadow: 0px 1em 16px 0px rgba(0, 0, 0, 0.2);
-
+    /* Add shadow effect */
 }
 
-.card:hover{
- transform: scale(1.05) ;
+/* Hover effect for cards */
+.card:hover {
+    transform: scale(1.05);
+    /* Scale up the card on hover */
 }
 
+/* Styling for text input and select elements */
 input[type=text],
 select {
     width: 100%;
+    /* Ensure the input/select takes up the full width */
     padding: 12px 20px;
+    /* Add padding inside the input/select */
     margin: 8px 0;
+    /* Add margin */
     display: inline-block;
+    /* Display as inline block */
     border: 1px solid #929292;
+    /* Set border */
     border-radius: 4px;
+    /* Apply rounded corners */
     box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
     font-weight: 400;
+    /* Set font weight */
     font-family: "Roboto Condensed", sans-serif;
+    /* Set font family */
     font-size: 100%;
+    /* Set font size */
 }
 
+/* Styling for submit button */
 input[type=submit] {
     width: 100%;
+    /* Ensure the button takes up the full width */
     background-color: #bd986d;
+    /* Set background color */
     color: rgb(48, 48, 48);
+    /* Set text color */
     padding: 14px 20px;
+    /* Add padding */
     margin: 8px 0;
+    /* Add margin */
     border: none;
+    /* Remove border */
     border-radius: 4px;
+    /* Apply rounded corners */
     cursor: pointer;
+    /* Set cursor to pointer */
 }
 
+/* Hover effect for submit button */
 input[type=submit]:hover {
     background-color: #947858;
+    /* Change background color on hover */
     color: whitesmoke;
+    /* Change text color on hover */
 }
 
-
+/* Styling for textarea */
 textarea {
     width: 100%;
+    /* Ensure the textarea takes up the full width */
     height: 150px;
+    /* Set height */
     padding: 12px 20px;
+    /* Add padding */
     box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
     border: 2px solid #ccc;
+    /* Set border */
     border-radius: 4px;
+    /* Apply rounded corners */
     background-color: #f8f8f8;
+    /* Set background color */
     font-size: 16px;
+    /* Set font size */
     resize: none;
+    /* Disable resizing */
     font-weight: 400;
+    /* Set font weight */
     font-family: "Roboto Condensed", sans-serif;
+    /* Set font family */
 }
 
+/* Styling for contact section */
 .contact {
     display: flex;
+    /* Display as flex */
     justify-content: center;
+    /* Align items horizontally at the center */
     flex-direction: column;
+    /* Arrange items in a column */
     align-self: center;
+    /* Align itself at the center */
     padding-top: 10%;
-    width:100%;
+    /* Add padding at the top */
+    width: 100%;
+    /* Ensure the contact section takes up the full width */
     max-width: 1000px;
+    /* Set maximum width */
 }
 
-footer{
+/* Styling for footer */
+footer {
     display: flex;
+    /* Display as flex */
     justify-content: center;
+    /* Align items horizontally at the center */
     margin: 0;
+    /* Remove margin */
     background-color: #202020;
-    color: whitesmoke
+    /* Set background color */
+    color: whitesmoke;
+    /* Set text color */
 }
