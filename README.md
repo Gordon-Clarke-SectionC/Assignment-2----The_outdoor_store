@@ -27,8 +27,6 @@ This project is a website for "The Outdoor Store", showcasing various outdoor sp
 2. Navigate to the project directory.
 3. Open the `index.html` file in a web browser to view the website.
 
-Alternatively, you can [view the live demo here](#) (Replace # with the actual link once deployed).
-
 ## Technologies Used
 - HTML
 - CSS
